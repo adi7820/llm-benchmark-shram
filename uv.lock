@@ -803,11 +803,15 @@ name = "llm-benchmark-shram"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "huggingface-hub" },
     { name = "vllm" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "vllm", specifier = ">=0.10.0" }]
+requires-dist = [
+    { name = "huggingface-hub", specifier = ">=0.34.2" },
+    { name = "vllm", specifier = ">=0.10.0" },
+]
 
 [[package]]
 name = "llvmlite"
