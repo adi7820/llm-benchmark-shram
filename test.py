@@ -1,9 +1,10 @@
 import requests
 import pandas as pd
+from prompts import SMALL, MEDIUM, LARGE
 
 url = "http://localhost:8080/benchmark"
 data = {
-    "prompt": "Who won the world series in 2020?"
+    "prompt": LARGE
 }
 
 response = requests.post(url, json=data)
