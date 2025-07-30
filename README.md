@@ -78,6 +78,7 @@ Before proceeding further, it's important to clarify the GPU capacity constraint
  To evaluate the models, I'm using three types of prompts—SMALL, MEDIUM, and LARGE—based on their input length. These prompts are defined in the prompts.py file. 
  Below are the results for the models:
  **meta-llama/Llama-3.1-8B-Instruct**
+ 
  **SMALL Prompt:**
  ```bash
  {
@@ -99,6 +100,7 @@ Before proceeding further, it's important to clarify the GPU capacity constraint
 ```
 
 **google/gemma-2-2b-it**
+
 **SMALL Prompt:**
 ```bash
 {
@@ -121,6 +123,7 @@ Before proceeding further, it's important to clarify the GPU capacity constraint
 ```
 
 **Qwen/Qwen2.5-7B-Instruct**
+
 **SMALL Prompt:**
 ```bash
 {
