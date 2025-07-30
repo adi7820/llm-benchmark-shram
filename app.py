@@ -1,3 +1,4 @@
+# FastAPI application for benchmarking LLMs.
 
 from openai import OpenAI
 import time

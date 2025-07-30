@@ -1,3 +1,5 @@
+# Script to run a benchmark test against a local LLM server.
+
 import requests
 import pandas as pd
 from prompts import SMALL, MEDIUM, LARGE
