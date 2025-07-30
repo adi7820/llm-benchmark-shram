@@ -32,3 +32,43 @@ Before proceeding further, it's important to clarify the GPU capacity constraint
  To simplify usage, I exposed the benchmarking functionality via a FastAPI service **(app.py)**. This allows users to send a prompt and receive benchmarking data from the locally hosted model via an API. The API implementation closely mirrors the logic in main.py.
 
  Lastly, I created **test.py** to interact with the FastAPI endpoint. It allows you to send test prompts and gives the benchmarking results.
+
+ ### Steps to create the solution:
+ 
+ 1. Install uv
+ ```bash
+ pip install uv
+ ```
+
+ 2. Initialize Project
+ ```bash
+ uv init --python=python3.12
+ ```
+
+ 3. Create a virtual enviorment
+ ```bash
+ uv venv
+ ```
+
+ 4. Make sure to list your dependencies
+
+ 5. Make the LLM Deployment Script Executable
+ ```bash
+ chmod +x local-deploy-llm.sh
+ ```
+
+ 6. Run the Script to Deploy the Model
+ ```bash
+ ./local-deploy-llm.sh google/gemma-2-2b-it
+ ```
+ This will deploy the specified model using vLLM.
+
+ 7. Start the Benchamrking FastAPI Server
+ ```bash
+ uv run app.py
+ ```
+
+ 8. Run the Test Script
+ ```bash
+ uv run test.py
+ ```
